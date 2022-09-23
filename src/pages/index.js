@@ -114,7 +114,6 @@ const Dashboard = () => (
           item
           xs={12}
           lg={8}>
-              <h1>Hola denuevo.</h1>
           </Grid>
         </Grid>
       </Container>
