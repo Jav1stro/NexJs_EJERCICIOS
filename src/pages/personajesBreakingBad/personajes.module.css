@@ -1,0 +1,16 @@
+.title{
+    color:#5465FF;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 3px double rgb(245,199,26);
+    border-right: 3px double rgb(245,199,26);
+    border-left: 3px double rgb(245,199,26);
+
+    align-items: center;
+    margin:auto;
+    /* padding-top:20px; */
+    width:30%;
+    height:100px;
+    background-color:rgba(245, 198, 26, 0.234)
+}

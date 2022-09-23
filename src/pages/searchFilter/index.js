@@ -3,12 +3,14 @@ import { Box, Container } from "@mui/material";
 
 import { DashboardLayout } from "../../components/dashboard-layout";
 import { useState } from "react";
-import styles from "./customers.module.css";
+import styles from "./searchFilter.module.css";
 
 const Customers = () => {
   const list = ["Banana", "Apple", "Orange", "Mango", "Pineapple", "Watermelon"];
 
   const [filterList, setFilterList] = useState(list);
+
+  
 
   const handleSearch = (event) => {
     if (event.target.value === "") {
@@ -32,8 +34,7 @@ const Customers = () => {
           flexGrow: 1,
           py: 8,
           mx:'auto',
-          border: '2px solid rgb(245,199,26)  ',
-          backgroundColor: '#E2FDFF',
+          border: '2px solid rgb(245,199,26) ',
           height: 300,
           width:'100%',
           textAlign:'center',

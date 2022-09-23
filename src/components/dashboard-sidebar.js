@@ -11,6 +11,7 @@ import { ShoppingBag as ShoppingBagIcon } from "../icons/shopping-bag";
 import { User as UserIcon } from "../icons/user";
 import { UserAdd as UserAddIcon } from "../icons/user-add";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
+import DescriptionIcon from '@mui/icons-material/Description';
 import { XCircle as XCircleIcon } from "../icons/x-circle";
 import { Logo } from "./logo";
 import { NavItem } from "./nav-item";
@@ -26,6 +27,11 @@ const items = [
     href: "/searchFilter",
     icon: <SavedSearchIcon fontSize="small" />,
     title: "Search Filter",
+  },
+  {
+    href: "/personajesBreakingBad",
+    icon: <DescriptionIcon fontSize="small" />,
+    title: "Personajes BB",
   },
   {
     href: "/products",

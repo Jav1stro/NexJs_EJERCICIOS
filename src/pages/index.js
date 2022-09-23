@@ -114,7 +114,7 @@ const Dashboard = () => (
           item
           xs={12}
           lg={8}>
-          </Grid>
+           </Grid>
         </Grid>
       </Container>
     </Box>
