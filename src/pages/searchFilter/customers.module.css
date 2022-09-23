@@ -1,0 +1,33 @@
+.container{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top:100px;
+    gap: 20px;
+    height: 400px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.title{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: rgb(245,199,26);
+}
+.item{
+    margin:10px;
+    font-size: 2rem;
+}
+.item::before{
+    content: '☄️'
+}
+.input{
+    width:50%;
+    font-size: large;
+    font-weight:bolder;
+    background-color: rgba(245, 198, 26, 0.709);
+    padding:10px;
+    color:black;
+    border: none;
+    border-radius: 10px;
+}
