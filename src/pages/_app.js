@@ -5,6 +5,7 @@ import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { createEmotionCache } from "../utils/create-emotion-cache";
+import { NextUIProvider } from "@nextui-org/react";
 import { theme } from "../theme";
 
 const clientSideEmotionCache = createEmotionCache();
@@ -15,19 +16,20 @@ const App = (props) => {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return (
-    <CacheProvider value={emotionCache}>
-      <Head>
-        <title>HomePage</title>
-        <meta name="viewport"
-        content="initial-scale=1, width=device-width" />
-      </Head>
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          {getLayout(<Component {...pageProps} />)}
-        </ThemeProvider>
-      </LocalizationProvider>
-    </CacheProvider>
+    <NextUIProvider>
+      <CacheProvider value={emotionCache}>
+        <Head>
+          <title>HomePage</title>
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
+        </Head>
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            {getLayout(<Component {...pageProps} />)}
+          </ThemeProvider>
+        </LocalizationProvider>
+      </CacheProvider>
+    </NextUIProvider>
   );
 };
 

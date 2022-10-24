@@ -3,15 +3,9 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 import { Box, Button, Divider, Drawer, Typography, useMediaQuery } from "@mui/material";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { ChartBar as ChartBarIcon } from "../icons/chart-bar";
-import { Cog as CogIcon } from "../icons/cog";
-import { Lock as LockIcon } from "../icons/lock";
-import { ShoppingBag as ShoppingBagIcon } from "../icons/shopping-bag";
-import { User as UserIcon } from "../icons/user";
-import { UserAdd as UserAddIcon } from "../icons/user-add";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
-import DescriptionIcon from '@mui/icons-material/Description';
+import AttributionIcon from "@mui/icons-material/Attribution";
 import { XCircle as XCircleIcon } from "../icons/x-circle";
 import { Logo } from "./logo";
 import { NavItem } from "./nav-item";
@@ -21,43 +15,19 @@ const items = [
   {
     href: "/",
     icon: <ChartBarIcon fontSize="small" />,
-    title: "Dashboard",
+    title: "Home",
   },
   {
-    href: "/searchFilter",
+    href: "/trending",
     icon: <SavedSearchIcon fontSize="small" />,
-    title: "Search Filter",
+    title: "Trending",
   },
   {
-    href: "/personajesBreakingBad",
-    icon: <DescriptionIcon fontSize="small" />,
-    title: "Personajes BB",
+    href: "/incoming",
+    icon: <AttributionIcon fontSize="small" />,
+    title: "Incoming Films",
   },
-  {
-    href: "/products",
-    icon: <ShoppingBagIcon fontSize="small" />,
-    title: "Products",
-  },
-  {
-    href: "/account",
-    icon: <UserIcon fontSize="small" />,
-    title: "Account",
-  },
-  {
-    href: "/settings",
-    icon: <CogIcon fontSize="small" />,
-    title: "Settings",
-  },
-  {
-    href: "/login",
-    icon: <LockIcon fontSize="small" />,
-    title: "Login",
-  },
-  {
-    href: "/register",
-    icon: <UserAddIcon fontSize="small" />,
-    title: "Register",
-  },
+
   {
     href: "/404",
     icon: <XCircleIcon fontSize="small" />,
@@ -113,7 +83,12 @@ export const DashboardSidebar = (props) => {
 
         <Box sx={{ flexGrow: 1 }}>
           {items.map((item) => (
-            <NavItem key={item.title} icon={item.icon} href={item.href} title={item.title} />
+            <NavItem
+              key={item.title}
+              icon={item.icon}
+              href={item.href}
+              title={item.title}
+            />
           ))}
         </Box>
       </Box>
@@ -127,10 +102,10 @@ export const DashboardSidebar = (props) => {
         open
         PaperProps={{
           sx: {
-            backgroundColor: `#5465FF`,
+            backgroundColor: `black`,
             color: "black",
             width: 280,
-            borderRight:'2px double rgb(245,199,26)'
+            borderRight: "2px double rgb(245,199,26)",
           },
         }}
         variant="permanent"
