@@ -14,7 +14,7 @@ const PersonajesBB =  () => {
     return (
         <>
           <Head>
-            <title>Favourites | Material Kit</title>
+            <title> Trending | JAV10</title>
           </Head>
           <Box
             component="main"
@@ -24,7 +24,7 @@ const PersonajesBB =  () => {
               height: 'fit-content',
               width:'100%',
               textAlign:'center',
-    
+              backgroundColor: 'rgba(200,100, 81,0.4)'
             }}
           >
             <h2 className={styles.title}>Trending Movies</h2>

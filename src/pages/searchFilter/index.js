@@ -26,7 +26,7 @@ const Customers = () => {
   return (
     <>
       <Head>
-        <title>Search Filter | Material Kit</title>
+        <title>Search Filter | JAV10</title>
       </Head>
       <Box
         component="main"

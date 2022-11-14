@@ -23,6 +23,7 @@ function TrendingMovies() {
   return (
     <Box
       sx={{
+        marginTop:'30px',
         display: "flex",
         flexDirection: "row",
         gap: "50px",

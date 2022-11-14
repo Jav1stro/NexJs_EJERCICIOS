@@ -27,6 +27,7 @@ export default function MovieCard({ movie }) {
           {movie.id}345
         </Typography>
         <p>First air date: {movie.first_air_date} </p>
+        <p>{movie.overview}</p>
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>

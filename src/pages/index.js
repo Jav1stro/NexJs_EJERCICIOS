@@ -3,11 +3,11 @@ import { Box, Container, Grid } from '@mui/material';
 import MovieList from '../components/listarPeliculas/MovieList'
 import { DashboardLayout } from '../components/dashboard-layout';
 
-const Dashboard = () => (
+const Home = () => (
   <>
     <Head>
       <title>
-        Dashboard | Material Kit
+        INDEX | JAV10
       </title>
     </Head>
     <Box
@@ -115,10 +115,10 @@ const Dashboard = () => (
   </>
 );
 
-Dashboard.getLayout = (page) => (
+Home.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
 );
 
-export default Dashboard;
+export default Home;

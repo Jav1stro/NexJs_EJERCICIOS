@@ -18,14 +18,14 @@ const items = [
     title: "Home",
   },
   {
-    href: "/trending",
+    href: "/movies/trending",
     icon: <SavedSearchIcon fontSize="small" />,
     title: "Trending",
   },
   {
-    href: "/incoming",
+    href: "/copyClipboard",
     icon: <AttributionIcon fontSize="small" />,
-    title: "Incoming Films",
+    title: "COpy clipboard",
   },
 
   {
